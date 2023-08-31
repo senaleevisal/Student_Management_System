@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url : jdbc:mysql://localhost:3306/LoginForm
+    username: root
+    password : Dsov@0605
+  jpa:
+    hibernate:
+      ddl-auto: create
