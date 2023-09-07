@@ -6,6 +6,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @CrossOrigin
 @Slf4j
@@ -18,5 +20,10 @@ public class User_Controller {
     @PostMapping
     public void addUser(@RequestBody User user){
         userService.add(user);
+    }
+
+    @GetMapping
+    public List<User> findAll (){
+        return userService.findAll();
     }
 }

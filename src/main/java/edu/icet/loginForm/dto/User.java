@@ -1,12 +1,14 @@
 package edu.icet.loginForm.dto;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Builder
 public class User {
     private String fullName;
     private String nameWithInitials;
